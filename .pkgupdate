@@ -1,0 +1,1 @@
+update_pkgver=$(wget --timeout=10 -q -O-  https://zoom.us/download | grep -m1 -ie 'class="linux-ver-text' | sed 's,.*Version \([0-9a-z\.]*\).*,\1,')
